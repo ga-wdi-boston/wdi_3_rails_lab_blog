@@ -2,5 +2,8 @@
   <h1>Editing Article:</h1>
   <%=  render 'form' %>
   <hr>
-  <%= link_to 'Back', articles_path %> | <%= link_to 'Home', root_path %>  
+  <ul class="list-inline">
+    <li><%= link_to 'Back', articles_path, class: 'btn btn-primary' %></li>
+    <li><%= link_to 'Home', root_path, class: 'btn btn-primary' %>  </li>
+  </ul>
 </div>

@@ -2,6 +2,9 @@
   <h1>New Article</h1>
   <%= render 'form' %>
   <hr>
-  <%= link_to 'Back', articles_path %>
+  <ul class="list-inline">
+    <li><%= link_to 'Back', articles_path, class: "btn btn-primary" %></li>
+  </ul>
+  
   
 </div>
