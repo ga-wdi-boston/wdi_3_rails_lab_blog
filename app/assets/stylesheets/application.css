@@ -15,4 +15,12 @@
  */
 
 //= require_tree .
-//= require 'bootstrap.min'
+//= require bootstrap.css
+/*
+*= require 'froala_editor.min.css'
+*= require 'froala_page.min.css'
+*= require 'font-awesome'
+*/
+
+body { padding-top: 60px; }
+

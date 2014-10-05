@@ -1,32 +1,19 @@
 <div class="container">
   <h1>Articles in JSON's Journal Blog</h1>
-  <div class="">
-    <table class="table table-striped table-bordered .table-hover">
-      
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Text</th>
-          <th colspan="3">Options</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @articles.each do |article| %>
-        <tr>
-          <td><%= link_to article.title, article_path(article)  %></td>
-          <td><%= article.text %></td>
-          <td><%= link_to 'Show', article_path(article) %></td>
-          <td><%= link_to 'Edit', edit_article_path(article) %></td>
-          <td><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-        <% end %>
-      </tbody>
-    </table>
-    
-  </div>
-  <hr>
   <ul class="list-inline">
     <li><%= link_to 'New Article', new_article_path, class: 'btn btn-primary' %></li>
     <li><%= link_to 'Home', root_path, class: 'btn btn-primary' %></li>
   </ul>
+  <% @articles.each do |article| %>
+  <div class="col-md-3 blog-blurb">
+    <h2><%= link_to article.title, article_path(article)  %></h2>
+    <h4><small><%= simple_format(article.text) %></small></h4>
+    <ul class="list-inline">
+      <li><%= link_to 'Show', article_path(article) %></li>
+      <li><%= link_to 'Edit', edit_article_path(article) %></li>
+      <li><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %></li>
+    </ul>
+  </div>
+  <% end %>
+  <hr>
 </div>

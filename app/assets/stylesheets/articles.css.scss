@@ -1,3 +1,18 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.blog-blurb {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.article-content {
+  img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}

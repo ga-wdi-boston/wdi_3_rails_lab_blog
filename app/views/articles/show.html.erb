@@ -1,7 +1,8 @@
 <div class="container">
   <div class="col-md-8">
-    <h1><%= @article.title %></h1>
-    <p><%= @article.text %></p>
+    <h1><%= @article.title %><small><%=  %></small></h1>
+
+    <div class="article-content"><%= simple_format(@article.text) %></div>
   </div>
   <div class="col-md-4">
     <h2>Comments</h2>
@@ -18,5 +19,4 @@
     <li><%= link_to 'Edit', edit_article_path, class: 'btn btn-primary' %></li>
     <li><%= link_to 'Home', root_path, class: 'btn btn-primary' %></li>
   </ul>
-  
 </div>
