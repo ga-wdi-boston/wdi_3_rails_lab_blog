@@ -15,12 +15,16 @@
  */
 
 //= require_tree .
-//= require bootstrap.css
+
+
 /*
+*= require 'bootstrap'
 *= require 'froala_editor.min.css'
 *= require 'froala_page.min.css'
 *= require 'font-awesome'
 */
 
+
 body { padding-top: 60px; }
+h1,h2,h3,h4,h5,h6 { font-family: 'Lobster', cursive; }
 
