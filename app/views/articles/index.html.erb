@@ -6,13 +6,18 @@
   </ul>
   <% @articles.each do |article| %>
   <div class="col-md-3 blog-blurb">
-    <h2><%= link_to article.title, article_path(article)  %></h2>
-    <h4><small><%= simple_format(article.text) %></small></h4>
-    <ul class="list-inline">
-      <li><%= link_to 'Show', article_path(article) %></li>
-      <li><%= link_to 'Edit', edit_article_path(article) %></li>
-      <li><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %></li>
-    </ul>
+    <div class="blurb-container">
+      <h2><%= link_to article.title, article_path(article)  %></h2>
+      <p><small><%= localize(article.created_at, :format => :long) %></small></p>
+      <!-- <div><%= simple_format(article.text) %></div> -->
+      <p><small></small></p>
+      <ul class="list-inline">
+        <li><%= link_to 'Show', article_path(article), class: 'btn btn-primary btn-xs' %></li>
+        <li><%= link_to 'Edit', edit_article_path(article), class: 'btn btn-primary btn-xs' %></li>
+        <li><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary btn-xs' %></li>
+      </ul>
+    </div>
+    
   </div>
   <% end %>
   <hr>

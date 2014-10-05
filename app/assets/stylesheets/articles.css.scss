@@ -3,9 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .blog-blurb {
-  img {
-    max-width: 100%;
-    height: auto;
+  
+  .blurb-container{
+    img {
+      // max-width: 100%;
+      // height: auto;
+    }
   }
 }
 
@@ -14,5 +17,8 @@
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
+    max-width: 300px;
+    height: auto;
   }
 }
+
