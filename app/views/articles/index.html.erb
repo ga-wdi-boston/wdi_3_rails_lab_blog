@@ -8,7 +8,10 @@
   <div class="col-md-3 blog-blurb">
     <div class="blurb-container">
       <h2><%= link_to article.title, article_path(article)  %></h2>
-      <p><small><%= localize(article.created_at, :format => :long) %></small></p>
+      <p>
+        <small><strong>Created on: </strong><%= localize(article.created_at, :format => :long) %></small><br>
+        <small><strong>Last updated on: </strong><%= localize(article.updated_at, :format => :long) %></small>
+      </p>
       <!-- <div><%= simple_format(article.text) %></div> -->
       <p><small></small></p>
       <ul class="list-inline">
@@ -17,7 +20,6 @@
         <li><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary btn-xs' %></li>
       </ul>
     </div>
-    
   </div>
   <% end %>
 </div>

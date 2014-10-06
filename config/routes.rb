@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   resources :articles do
     resources :comments
+    resources :tags
   end
 
   get 'welcome/index'
