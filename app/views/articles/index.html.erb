@@ -1,25 +1,28 @@
 <div class="container">
   <h1>Articles in JSON's Journal Blog</h1>
-  <ul class="list-inline">
+  <!-- <ul class="list-inline">
     <li><%= link_to 'New Article', new_article_path, class: 'btn btn-primary' %></li>
     <li><%= link_to 'Home', root_path, class: 'btn btn-primary' %></li>
-  </ul>
+  </ul> -->
   <% @articles.each do |article| %>
-  <div class="col-md-3 blog-blurb">
-    <div class="blurb-container">
-      <h2><%= link_to article.title, article_path(article)  %></h2>
-      <p>
-        <small><strong>Created on: </strong><%= localize(article.created_at, :format => :long) %></small><br>
-        <small><strong>Last updated on: </strong><%= localize(article.updated_at, :format => :long) %></small>
-      </p>
-      <!-- <div><%= simple_format(article.text) %></div> -->
-      <p><small></small></p>
-      <ul class="list-inline">
-        <li><%= link_to 'Show', article_path(article), class: 'btn btn-primary btn-xs' %></li>
-        <li><%= link_to 'Edit', edit_article_path(article), class: 'btn btn-primary btn-xs' %></li>
-        <li><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary btn-xs' %></li>
-      </ul>
+    <div class="row blog-blurb">
+      <div class="col-md-2"><%= image_tag article.image.url(:medium), class: 'blurb-thumbnail' %></div>
+      <div class="col-md-3">
+        <h2><%= link_to article.title, article_path(article) %></h2>
+        <small>Created on: <%= localize(article.created_at, :format => :long) %></small><br>
+        <small>Last updated on: <%= localize(article.updated_at, :format => :long) %></small>
+      </div>
+      <div class="col-md-5">
+        <p><%= truncate(article.text, length: 200, separator: ' ', omission: '...') %></p>
+      </div>
+      <div class="col-md-2">
+        <ul class="crud-list">
+          <li><%= link_to 'Show', article_path(article), class: 'btn btn-primary btn-xs' %></li>
+          <li><%= link_to 'Edit', edit_article_path(article), class: 'btn btn-primary btn-xs' %></li>
+          <li><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary btn-xs' %></li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <% end %>
+    <hr>
+  <% end %>  
 </div>

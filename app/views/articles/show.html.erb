@@ -1,7 +1,11 @@
 <div class="container">
   <div class="col-md-8">
-    <h1><%= @article.title %><small><%=  %></small></h1>
-    <div class="article-content"><%= simple_format(@article.text)  %></div>
+    <h1><%= @article.title %></h1>
+    <small>Created on <%= time_tag @article.created_at, pubdate: true %></small>
+    <div class="article-content">
+      <%= image_tag @article.image.url, class: 'featured-image' %>
+      <%= simple_format(@article.text)  %>
+    </div>
   </div>
   <div class="col-md-4">
     <h3>Tags:</h3>

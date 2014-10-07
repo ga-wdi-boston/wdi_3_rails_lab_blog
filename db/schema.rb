@@ -11,13 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141006132621) do
+ActiveRecord::Schema.define(version: 20141007012717) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "articles", force: true do |t|
     t.string   "title"
     t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.binary   "image"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "bootsy_image_galleries", force: true do |t|
@@ -34,22 +42,6 @@ ActiveRecord::Schema.define(version: 20141006132621) do
     t.datetime "updated_at"
   end
 
-  create_table "ckeditor_assets", force: true do |t|
-    t.string   "data_file_name",               null: false
-    t.string   "data_content_type"
-    t.integer  "data_file_size"
-    t.integer  "assetable_id"
-    t.string   "assetable_type",    limit: 30
-    t.string   "type",              limit: 30
-    t.integer  "width"
-    t.integer  "height"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable"
-  add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type"
-
   create_table "comments", force: true do |t|
     t.string   "commenter"
     t.text     "body"
@@ -58,7 +50,7 @@ ActiveRecord::Schema.define(version: 20141006132621) do
     t.datetime "updated_at"
   end
 
-  add_index "comments", ["article_id"], name: "index_comments_on_article_id"
+  add_index "comments", ["article_id"], name: "index_comments_on_article_id", using: :btree
 
   create_table "tags", force: true do |t|
     t.string   "label"
@@ -67,6 +59,6 @@ ActiveRecord::Schema.define(version: 20141006132621) do
     t.datetime "updated_at"
   end
 
-  add_index "tags", ["article_id"], name: "index_tags_on_article_id"
+  add_index "tags", ["article_id"], name: "index_tags_on_article_id", using: :btree
 
 end

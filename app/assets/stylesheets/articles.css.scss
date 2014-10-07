@@ -4,8 +4,18 @@
 
 
 
-.blog-blurb { height: 225px; }
+.blog-blurb { 
+  margin: 10px 0;
+  h2 { margin: 0; padding: 0;}
+  .blurb-thumbnail {
+    width: 100%;
+    height: auto;
+  }
+  .crud-list { list-style:none; }
+  .crud-list li { margin: 5px 0 5px; }
+}
 
+img.featured-image { max-width: 100%; height: auto; }
 .article-content {
   img {
     float: left;
@@ -14,4 +24,11 @@
     max-width: 300px;
     height: auto;
   }
+}
+
+input[type="submit"].save {
+  min-width: 100px;
+  min-height: 50px;
+  font-weight: bold;
+  font-size: 1.3em;
 }
