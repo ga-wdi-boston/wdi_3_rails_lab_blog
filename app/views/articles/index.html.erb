@@ -1,9 +1,5 @@
 <div class="container">
   <h1>Articles in JSON's Journal Blog</h1>
-  <!-- <ul class="list-inline">
-    <li><%= link_to 'New Article', new_article_path, class: 'btn btn-primary' %></li>
-    <li><%= link_to 'Home', root_path, class: 'btn btn-primary' %></li>
-  </ul> -->
   <% @articles.each do |article| %>
     <div class="row blog-blurb">
       <div class="col-md-2"><%= image_tag article.image.url(:medium), class: 'blurb-thumbnail' %></div>

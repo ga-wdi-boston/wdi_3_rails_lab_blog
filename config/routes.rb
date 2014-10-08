@@ -1,17 +1,24 @@
 Rails.application.routes.draw do
   
-  # devise_for :users, controllers: { sessions: 'sessions' }
+  root 'articles#index'
+  devise_for :users
+  # devise_for :users, :path => "user", :except => "create", :path_names => { 
+  #     :sign_in  => 'login', 
+  #     :sign_out => 'logout', 
+  #     :password => 'forgot-password', 
+  #     :confirmation => 'verification', 
+  #     :unlock   => 'unblock', 
+  #     :sign_up  => 'signup' 
+  #   } 
+
   # devise_for :admins, controllers: { sessions: "admins/sessions" }
 
   resources :articles do
     resources :comments
     resources :tags
   end
-  root 'welcome#index'
+  
   # get 'welcome/index'
-  
-  
-  # root 'articles#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

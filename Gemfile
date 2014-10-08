@@ -18,6 +18,5 @@ end
 
 gem 'wysiwyg-rails'
 gem 'font-awesome-rails'
-gem 'bootstrap'
 gem 'paperclip'
-# gem 'devise'
+gem 'devise'
