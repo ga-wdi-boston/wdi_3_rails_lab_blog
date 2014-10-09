@@ -3,7 +3,5 @@
 <h2>posts</h2>
 
 <% @posts.each do |post| %>
-  <%= post.title %>
-  <%= post.author %>
-  <%= post.content %>
+  <h3><%= link_to post.title, post %></h3>
 <% end %>
