@@ -7,14 +7,12 @@ class PostsController < ApplicationController
   end
 
   def show
-    binding.pry
   end
 
   private
   def set_post
    @post = Post.find(params[:id])
    @comments = @post.comments
-   @num_comments = @comments.count
   end
 
  end

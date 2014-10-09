@@ -6,6 +6,18 @@
 <div>
   <%= @post.content %>
 </div>
+</br>
 <div>
-  <p><%= link_to "Back", posts_path %></p>
+  <ol>
+    <% @comments.each do |comment| %>
+      <li><%= comment.content %>  <%= comment.author %> <%= comment.created_at.strftime("%Y-%m-%d") %></li>
+    <% end %>
+  </ol>
+</div>
+
+</div>
+
+</div>
+<div>
+  <p><%= link_to "Back to post listing", posts_path %></p>
 </div>
