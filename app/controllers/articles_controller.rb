@@ -1,12 +1,12 @@
 class ArticlesController < ApplicationController
   
-  before_action :authenticate_user!, only: [:create,:new]
+  before_action :authenticate_user!, only: [:create,:new, :edit, :update]
   before_action :set_article, only: [:show,:edit,:update,:destroy]
 
   # http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
 
   def index 
-    @articles = Article.all
+    @articles = Article.all.sort_by { |article| article.updated_at }.reverse
   end
 
   def new
