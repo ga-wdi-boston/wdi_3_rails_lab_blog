@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+b1 = Blog.create("The 10,000 ways to do it wrong", "This is a famous quote from Edison that reminds us that failures are inevidable and paths for learning rather than actual failure.")
+b2 = Blog.create("Racing Sheep, Herding Race Horses", "In this presentation from Dave Thomas in 2007, he talks about developing expertise...")
