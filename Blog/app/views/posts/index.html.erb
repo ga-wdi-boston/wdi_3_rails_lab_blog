@@ -1,6 +1,6 @@
 <h2>Holly's BlogIt</h2>
 <% @posts.each do |post| %>
   <div>
-    <%= link_to post.subject, post %>  (<%= post.author + " on " + post.created_at.strftime("%Y-%m-%d") %>)
+    <%= link_to post.subject, post %>  Posted by: <%= post.author + " on " + post.created_at.strftime("%Y-%m-%d") %> (Num: <%= post.comments.count %>)
   </div>
 <% end %>
