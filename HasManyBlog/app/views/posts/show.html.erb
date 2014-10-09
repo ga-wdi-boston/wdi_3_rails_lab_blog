@@ -7,6 +7,9 @@
 <% @post.comments.each do |comment| %>
   <h4><%= comment.author %></h4>
   <p><%= comment.content %></p>
+  <% comment.comments.each do |comment| %>
+    lmao
+  <% end %>
 <% end %>
 
 <h3>make a comment</h3>
