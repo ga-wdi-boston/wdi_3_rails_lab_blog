@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Articles in JSON's Journal Blog</h1>
+  <% @articles.each do |article| %>
+    <div class="row blog-blurb">
+      <div class="col-md-2"><%= image_tag article.image.url(:medium), class: 'blurb-thumbnail' %></div>
+      <div class="col-md-3">
+        <h2><%= link_to article.title, article_path(article) %></h2>
+        <small>Created on: <%= localize(article.created_at, :format => :long) %></small><br>
+        <small>Last updated on: <%= localize(article.updated_at, :format => :long) %></small>
+      </div>
+      <div class="col-md-5">
+        <p><%= truncate(article.text, length: 200, separator: ' ', omission: '...') %></p>
+        <p>
+          <% article.tags.each do |tag| %>
+            <a class="btn btn-info tag" href="#"><%= tag.label %></a>
+          <% end %>
+        </p>
+      </div>
+      <div class="col-md-2">
+        <ul class="crud-list">
+          <li><%= link_to 'Show', article_path(article), class: 'btn btn-primary btn-xs' %></li>
+          <li><%= link_to 'Edit', edit_article_path(article), class: 'btn btn-primary btn-xs' %></li>
+          <li><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary btn-xs' %></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  <% end %>  
+</div>

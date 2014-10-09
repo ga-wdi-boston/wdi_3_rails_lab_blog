@@ -1,0 +1,239 @@
+<!-- first post -->
+<h2>Getting set up in Rails</h2>
+<p>This is my first blog post from my rails application, using the wysiwyg editor <a href="https://github.com/froala/wysiwyg-rails">from Froala.</a> I used the <a href="http://guides.rubyonrails.org/getting_started.html">Rails documentation Getting Started guide</a>.</p>
+
+
+
+<!-- second post -->
+<ul>
+  <li>Blog Platform</li>
+  <li>MBTA Router</li>
+  <li>Personal Portfolio</li>
+  <li>IEP Goal Tracker</li>
+  <li>HMIS Data visualization</li>
+</ul>
+
+
+
+<!-- third post -->
+<h2>HTML & CSS</h2>
+<p>First half of today's class focused on HTML and CSS basics during which I created a tagging structure on my rails blog. Corrine and I worked together, the lab involved sketching a wireframe of a website and having another pair code the wireframes. Rebecca and Holly coded our mockups, we coded their mockups, then we went to lunch.</p>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=K1U8_YKsSkA&feature=youtu.be">Anna's CSS walkthrough</a></li>
+</ul>
+<h2>HTTP Requests</h2>
+<ul>Helpful resources:                                                                              
+  <li><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html">HTTP Protocols on W3 dot org</a></li>
+  <li><a href="http://programmers.stackexchange.com/questions/128537/how-would-you-explain-http-to-a-lay-person">Explaining HTTP to a lay person</a></li>
+  <li><a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods">HTTP Protocol from Wikipedia</a></li>
+  <li><a href="https://github.com/rails/rails">Rails on Github</a></li>
+  <li><a href="http://rubyonrails.org">Ruby on Rails dot org</a></li>
+</ul>
+<table width="100%" class="table table-striped">
+  <thead>
+    <tr>
+      <td>URL</td>
+      <td>VERB</td>
+      <td>Behavior</td>
+      <td>SQL Command</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>.../books</td>
+      <td>GET</td>
+      <td>Retain representation of all books</td>
+      <td>SELECT * FROM books</td>
+    </tr>
+    <tr>
+      <td>.../books/1</td>
+      <td>GET</td>
+      <td>Retain representation of book with id '1'</td>
+      <td>SELECT * FROM books WHERE id='1'</td>
+    </tr>
+    <tr>
+      <td>.../books</td>
+      <td>POST</td>
+      <td>Create a new book</td>
+      <td>INSERT INTO books...</td>
+    </tr>
+    <tr>
+      <td>.../books/13</td>
+      <td>PUT</td>
+
+      <td>Update book with id 13</td>
+
+      <td>UPDATE books WHERE book.id = '13'</td>
+    </tr>
+
+    <tr>
+      <td>.../books/42</td>
+
+      <td>DELETE</td>
+
+      <td>Deletes book with id '42'</td>
+
+      <td>DELETE FROM books WHERE id = '42'</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Intro to Rails</h2>
+
+<ul>
+  <li>Created a new Rails project: <code>rails new FirstApp</code> with this appended on the end: "--database=postgresql"</li>
+
+  <li>Created new database with <code>rake db:create</code></li>
+
+  <li>Added a route to config/routes.rb of get <code>'welcome' =&gt; 'welcome#show'</code></li>
+
+  <li>View routes in terminal with <code>rake routes</code></li>
+
+  <li>Created a new controller and associated files with a rails generator : <code>bin/rails generate controller welcome</code></li>
+
+  <li>Create a controller action called show in app/controller/welcome_controller.rb</li>
+
+  <li>Created a view template in app/views/welcome/show.html.erb</li>
+
+  <li>Ran the Rails server by running rails server from the bash prompt, which we can close with CTRL-C</li>
+
+  <li>View page in Chrome at http://localhost:3000/welcome</li>
+</ul>
+
+<h2>Homework</h2>
+
+<p>Read chapter 2 of Agile Development with Rails</p>
+
+
+
+
+<!-- fourth post -->
+
+<ul>
+  <li>User accounts</li>
+
+  <li>delete tags</li>
+
+  <li>Landing page layout with featured image, row-based instead of grid layout, and truncated first few sentences</li>
+
+  <li><del>Allow for feature page</del></li>
+
+  <li><del>Save images to database</del></li>
+
+  <li>Blog post formats</li>
+
+  <li>Method in my article controller that:                                                                                                                                
+    <ul>
+      <li>Strips out any image tags and their attributes (the entire image tag)</li>
+
+      <li>Takes the first ~35 — ~50 characters of the post and saves those into an instance variable</li>
+
+      <li>Uses that string as the blog blurb to appear on the home page</li>
+    </ul>
+  </li>
+
+  <li>Add icons for the main navigation?</li>
+
+  <li><del>Change article form "submit" to "save" and make it much larger, call to action</del></li>
+
+  <li>Kill bootstrap header styles</li>
+
+  <li>Make breadcrumb</li>
+
+  <li>Move Edit, Back & Home buttons to top, as breadcrumb, make icons</li>
+
+  <li>Sprite Sheet</li>
+</ul>
+
+
+
+
+
+
+<!-- fifth post -->
+<h2>Rails!! Hooray!</h2>
+<p>Keep track of your questions. David might say "not today" but it's not because he's hiding things. It's more about he might cover that topic at a later date.</p>
+
+<h2>Routes</h2>
+
+<p>The first thing that happens when you make a request on a rails app is Routing. The router takes the HTTP request (url & method) directs to proper Controller and Method.</p>
+
+<h2>Controller</h2>
+
+<p>The controller's purpose is to deal with user input, and the user input comes in as params. Then the controller interacts with the model. Then the controller interacts with view, returning the view instance variables of the model.</p>
+
+<h2>Model</h2>
+
+<p>The models are object representations of the data base schema. It provides behavior and rules for the data. The model is all about data. Doesn't know anything about html, css, erb files, views, input from the controller, it just knows about its data. The model ties into the database.</p>
+
+<h2>View</h2>
+
+<p>The view mixes data together from the controller with html, rendering out the information sent from the controller. Also for creating forms that can make more requests.</p>
+
+<h2>Migrations</h2>
+
+<p>Migrations change the structure of the database. They are not triggered by HTTP requests (they are run manually).</p>
+<hr>
+<h2>The HTTP requests go like this with Rails app:</h2>
+
+<ol>
+  <li>Browser makes GET request to the server</li>
+
+  <li>Routes look at URL + HTTP method direct to matching controller and action</li>
+
+  <li>Controller action                                                                                                                                    
+    <ul>
+      <li>Take optional user input from params</li>
+
+      <li>Use the model to query the database with user input</li>
+
+      <li>Store data in @instance variable</li>
+    </ul>
+  </li>
+
+  <li>Name matching ERB view: compile/render info from @instance variables into HTML</li>
+
+  <li>End of controller action returns the rendered HTML as a response. </li>
+
+  <li>Browser displays HTML</li>
+</ol>
+
+<h2>Rails migrations</h2>
+
+<p><code>rails g migration CreateBooks title author_name price:decimal</code> creates a new table on your database called Books</p>
+
+<p><code>rake db:migrate</code> runs the migration (adds the new table `Books`</p>
+
+<p><code>rails g migration AddNumberOfPagesAndLanguageToBooks num_pages:integer language:string</code> adds two new columns called num_pages which takes an integer, and language, which takes a string.</p>
+
+<p><code>rake db:migrate</code> to apply the migration (actually adds the columns to the tables)</p>
+
+<p><code>rake db:rollback</code> rolls back your migration by one migration</p>
+
+<p><br></p>
+
+<pre><code>class CreateBooks
+def change
+    create_table :books do |t|
+      t.string :title
+      t.string :author #=&gt; added in after creating the initial migration table
+      t.date :pub_date #=&gt; added in after creating the initial migration table
+      t.timestamps null: false
+    end
+  end
+end
+</code></pre>
+
+<p><br></p>
+
+<p>by rolling back before your initial migration, you can alter the original schema in your ruby file.</p>
+
+<p><br></p>
+
+<p><code>rake db:migrate</code> to apply your changes to your db</p>
+
+<h2>Models</h2>
+
+<p>Models inherits from <code>ActiveRecord::Base</code>. Upon creation models will be generated as empty. </p>
+
+<p>By adding in <code>gem 'pry-rails'</code> in your Gemfile, you can use pry in the Rails console by calling <code>rails (c)onsole</code></p>
