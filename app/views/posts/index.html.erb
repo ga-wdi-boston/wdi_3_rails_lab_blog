@@ -1,7 +1,9 @@
-<h2>Recent Posts</h2>
+  <h2>Recent Posts</h2>
 
 <ul>
   <% @posts.each do |post| %>
-    <li><%= link_to post.post_title, post %> by <%= post.post_user %> at <%= post.post_time %></li>
+    <li><img src="http://i.imgur.com/bPCKMO4.gif" width = 70px><%= link_to post.post_title, post %> by <%= post.post_user %> at <%= post.post_time %></li>
   <% end %>
 </ul>
+
+<%= link_to 'new post', new_post_path %>

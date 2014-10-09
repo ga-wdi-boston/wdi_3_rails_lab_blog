@@ -1,1 +1,25 @@
-_form
+<%= form_for @post do |f| %>
+
+<p>
+  <%= f.label :post_title %>
+  <%= f.text_field :post_title %>
+</p>
+
+<p>
+  <%= f.label :post_content %>
+  <%= f.text_field :post_content %>
+</p>
+
+<p>
+  <%= f.label :post_user %>
+  <%= f.text_field :post_user %>
+</p>
+
+  <% f.hidden_field :post_time %>
+
+
+  <%= f.submit %>
+
+<% end %>
+
+

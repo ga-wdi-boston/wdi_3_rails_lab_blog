@@ -1,1 +1,7 @@
-edit
+<h2>Edit post</h2>
+
+<%= render "form" %>
+
+<%= link_to "nevermind", action: :index %>
+
+<%= link_to "balete this", @post, method: :delete, data: {confirm: 'are you sure?!?!?11'} %>
