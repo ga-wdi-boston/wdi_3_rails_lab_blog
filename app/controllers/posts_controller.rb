@@ -8,6 +8,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @comment = Comment.new(post_id: params[:id])
   end
 
   def new
@@ -28,6 +29,8 @@ class PostsController < ApplicationController
   end
 
   def update
+    @post = Post.find(params[:id])
+
     if @post.update(post_params)
       redirect_to @post, notice: "updated!"
     else

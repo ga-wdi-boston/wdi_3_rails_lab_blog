@@ -1,7 +1,7 @@
 <%= notice %>
 
-  <h2><%= @post.post_title %></h2>
-  <h3><%= @post.post_time %></h3>
+<h2><%= @post.post_title %></h2>
+<h3><%= @post.post_time %></h3>
 
 <article>
   <p> <%= @post.post_content %><p>
@@ -11,4 +11,17 @@
 
 <%= link_to "edit this", edit_post_path(params[:id]) %>
 
+<h3> add a comment </h3>
+
+<%= form_for @comment do |f| %>
+  <p>
+  <%= f.label "Enter your comment" %>
+  <%= f.text_field :comment_text %>
+  </p>
+  <p>
+  <%= f.label "Enter your name" %>
+  <%= f.text_field :comment_user %>
+  </p>
+  <%= f.submit "Submit Comment" %>
+<% end %>
 

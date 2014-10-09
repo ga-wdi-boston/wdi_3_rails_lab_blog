@@ -5,7 +5,10 @@ post1 = Post.create(post_title: "best day ever", post_content: "we went to the z
 post2 = Post.create(post_title: "worst day ever", post_content: "I fell down the stairs", post_user: "Shayna")
 
 
-post1 = Post.create(post_title: "life is rad", post_content: "ice cream is my favorite", post_user: "Shayna")
+post3 = Post.create(post_title: "life is rad", post_content: "ice cream is my favorite", post_user: "Shayna")
+
+
+post4 = Post.create(post_title: "this is a cool new post", post_content: "this is new post content", post_user: "Sean")
 
 comment1 = Comment.create(comment_text: "woohoo", comment_user: "sean", post_id: 1)
 
