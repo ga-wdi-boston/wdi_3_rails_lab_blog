@@ -1,3 +1,22 @@
 <h1><%= @post.title %></h1>
 <h2><%= @post.author %></h2>
 <p><%= @post.content %></p>
+
+<h2>comments</h2>
+
+<% @post.comments.each do |comment| %>
+  <%= comment.author %>
+  <%= comment.content %>
+<% end %>
+
+<%= form_for @comment do |f| %>
+  <%= f.hidden_field :post_id %>
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "All posts", posts_path %>
