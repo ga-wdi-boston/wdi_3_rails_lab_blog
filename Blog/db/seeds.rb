@@ -8,3 +8,8 @@
 Post.delete_all
 b1 = Post.create(subject: "Failure or 10,000 ways to do it wrong?", content: "This is based on a famous quote from Edison that reminds us that failures are inevidable and paths for learning rather than actual failure.")
 b2 = Post.create(subject: "Racing Sheep, Herding Race Horses", content: "In this presentation from Dave Thomas in 2007, he talks about developing expertise...")
+
+b2.comments.create(author: "Holly Moody", content: "Love this presentation. Has helped me use the right prism when talking with folks of widely varying expertise.")
+b2.comments.create(author: "Another Fine User", content: "Great presentation from an industry Guru!!")
+
+b1.comments.create(author: "Suzie Blogger", content: "Never fail, always try again..")
