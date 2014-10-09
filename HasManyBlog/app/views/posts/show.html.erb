@@ -2,12 +2,14 @@
 <h2><%= @post.author %></h2>
 <p><%= @post.content %></p>
 
-<h2>comments</h2>
+<h3>comments</h3>
 
 <% @post.comments.each do |comment| %>
-  <%= comment.author %>
-  <%= comment.content %>
+  <h4><%= comment.author %></h4>
+  <p><%= comment.content %></p>
 <% end %>
+
+<h3>make a comment</h3>
 
 <%= form_for @comment do |f| %>
   <%= f.hidden_field :post_id %>
