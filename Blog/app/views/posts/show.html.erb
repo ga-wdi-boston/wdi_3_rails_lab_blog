@@ -1,5 +1,11 @@
 <h2><%= @post.subject %></h2>
+<h3>Author: <%= @post.author %></h3>
+<h4>Created: <%= @post.created_at.strftime("%Y-%m-%d") %></h4>
 
+<h4>Content</h4>
 <div>
   <%= @post.content %>
+</div>
+<div>
+  <p><%= link_to "Back", posts_path %></p>
 </div>

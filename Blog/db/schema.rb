@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20141009192646) do
   add_index "comments", ["post_id"], name: "index_comments_on_post_id", using: :btree
 
   create_table "posts", force: true do |t|
+    t.string   "author",     null: false
     t.string   "subject",    null: false
     t.text     "content"
     t.datetime "created_at", null: false
