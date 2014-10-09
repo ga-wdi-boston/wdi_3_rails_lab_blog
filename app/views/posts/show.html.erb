@@ -1,1 +1,9 @@
-show!
+
+  <h2><%= @post.post_title %></h2>
+  <h3><%= @post.post_time %></h3>
+
+<article>
+  <p> <%= @post.post_content %><p>
+</article>
+
+<%= link_to "back home", posts_path %>
