@@ -4,3 +4,4 @@
     <%= link_to post.subject, post %>  Posted by: <%= post.author + " on " + post.created_at.strftime("%Y-%m-%d") %> (Num: <%= post.comments.count %>)
   </div>
 <% end %>
+<%= link_to "New Post", new_post_path %>
