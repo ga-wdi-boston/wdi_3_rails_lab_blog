@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show]
+  before_action :set_post, only: [:show, :edit, :update]
 
   def index
     @posts = Post.order(created_at: :desc)
@@ -17,11 +17,16 @@ class PostsController < ApplicationController
     redirect_to post_path(@post)
   end
 
+  def edit
+    binding.pry
+  end
+
   def update
+    binding.pry
     if @post.update(post_params)
-      format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+      redirect_to @post, notice: 'Post was successfully updated.'
     else
-      format.html { render :edit }
+      render :edit
     end
   end
 

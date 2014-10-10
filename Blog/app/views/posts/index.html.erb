@@ -3,7 +3,7 @@
   <div>
     <%= link_to post.subject, post %>
     Posted by: <%= post.author + " on " + post.created_at.strftime("%Y-%m-%d") %> (Num: <%= post.comments.count %>)
-    <%= link_to "Edit", posts_path(post.id) %>
+    <%= link_to "Edit", edit_post_path(post.id) %>
   </div>
 <% end %>
 <%= link_to "New Post", new_post_path %>
