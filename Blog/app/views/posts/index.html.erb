@@ -2,7 +2,9 @@
 <% @posts.each do |post| %>
   <div>
     <%= link_to post.subject, post %>
-    Posted by: <%= post.author + " on " + post.created_at.strftime("%Y-%m-%d") %> (Num: <%= post.comments.count %>)
+    <%= post.category.present? ? post.category : General %>
+    Posted by: <%= post.author + " on " +
+      post.created_at.strftime("%Y-%m-%d") %> (Num: <%= post.comments.count %>)
     <%= link_to "Edit", edit_post_path(post.id) %>
     | <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
   </div>
