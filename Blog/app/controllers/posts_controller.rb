@@ -17,6 +17,14 @@ class PostsController < ApplicationController
     redirect_to post_path(@post)
   end
 
+  def update
+    if @post.update(post_params)
+      format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+    else
+      format.html { render :edit }
+    end
+  end
+
 
   private
   def set_post
