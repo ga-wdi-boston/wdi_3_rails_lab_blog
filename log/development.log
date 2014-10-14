@@ -22252,3 +22252,1954 @@ Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?bod
 
 
 Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-14 00:18:02 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 112ms (Views: 109.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:17:27 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 08:18:03 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 2067ms (Views: 2064.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/main-16ec48d9fcfc28526c1c24ba13c28606.css?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/application-18bfc7393b64e4da36e91efcc54427e2.css?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:05 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 08:18:30 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 2113ms (Views: 2110.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/main-b7554943534d19771df0824acbc5aaca.css?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/application-4e288fb0dea2615a32e0581f7b0b5cf0.css?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:32 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 08:18:38 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 2116ms (Views: 2113.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/main-b9a6a0137476e0d3b042537867386531.css?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/application-c4af81af6e411e0c58a2e1dad9790fc8.css?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:40 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 08:18:52 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 2276ms (Views: 2273.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application-9c4cb1d76c2b1c0ffb79b817644a4a73.css?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/main-06c491f6342679be30356dae1e0a6e8e.css?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:18:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 08:19:29 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 2133ms (Views: 2130.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/main-0067a87c5738ec9b1be8809a909e8c2c.css?body=1" for 127.0.0.1 at 2014-10-14 08:19:31 -0400
+
+
+Started GET "/assets/application-f7b2664f8f188a89a61d49ab7e5c4c45.css?body=1" for 127.0.0.1 at 2014-10-14 08:19:31 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:31 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:31 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:31 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:31 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:31 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:31 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:31 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:31 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:31 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:32 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:32 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:32 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:32 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:32 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:32 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:19:32 -0400
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-10-14 08:19:40 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/show.html.erb within layouts/application (85.0ms)
+Completed 200 OK in 224ms (Views: 203.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 08:20:10 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 235ms (Views: 232.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 08:20:43 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 2103ms (Views: 2100.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/main-5393f7767b497d8c2fbd1202aca15552.css?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/application-bfc09ab882446b86c2c60f5477cf8743.css?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:20:46 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 08:23:24 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 2166ms (Views: 2163.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/application-24a073d6bf675a48b51a1e56e1ef1d0d.css?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/main-fde496cb2284e31acbe6e4e583f1cf89.css?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:26 -0400
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-14 08:23:28 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 129ms (Views: 124.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-14 08:23:30 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 141ms (Views: 138.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application-24a073d6bf675a48b51a1e56e1ef1d0d.css?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/main-fde496cb2284e31acbe6e4e583f1cf89.css?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:23:31 -0400
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-14 08:24:02 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2204ms (Views: 2199.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application-c61bd2f9373fd263b1c38c18109be7c8.css?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/main-59c9da833034309f440cd11de9b07a33.css?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:05 -0400
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-14 08:24:27 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 2119ms (Views: 2115.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application-9e2a53d3113a9cc8c7026ed42a396bc5.css?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/main-a6c77cdba802d4728c6c63b9fbd5bbfe.css?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:29 -0400
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-14 08:24:45 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 2247ms (Views: 2242.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/main-1dd5bc6c5ab8b5a5ff0e59a91e86bc77.css?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/application-bf6427f9f8a3f4bdaf570cd6c06657fd.css?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:24:48 -0400
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-14 08:25:23 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 2178ms (Views: 2174.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/main-6f583cc32fad0aaabd2dcfe39b5541e3.css?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/application-089735dc8cec4210dde01c997e0ffd31.css?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:25 -0400
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-14 08:25:36 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 2172ms (Views: 2169.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-7b94c9e9db5a37590e864e72b4ada0d6.css?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/main-fc202d13751137906dc0ea54cf749fe6.css?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:38 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:25:39 -0400
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-14 08:28:10 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 2187ms (Views: 2183.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/main-0a0afbc23f1ac729656f725281597797.css?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/application-42de19ba075d38ba8d83f25a91780363.css?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:12 -0400
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-14 08:28:41 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 2126ms (Views: 2122.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/main-d7975e161481937e47bdecc79738d346.css?body=1" for 127.0.0.1 at 2014-10-14 08:28:43 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:43 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:43 -0400
+
+
+Started GET "/assets/application-f48fec41279be66b39bfc23c7035d9f6.css?body=1" for 127.0.0.1 at 2014-10-14 08:28:43 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:28:44 -0400
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-14 08:29:01 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 2210ms (Views: 2207.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/main-0c19d237f7066c1054c50ab60f863784.css?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/application-24e0e65b3e9233606a50961dc568fad3.css?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:03 -0400
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-14 08:29:54 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (1.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 2174ms (Views: 2168.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/main-fbe4693d28671362316d2bb620c6c98b.css?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/application-927f8eb76b4b4805a4c0ed45e6455d7e.css?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:29:57 -0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-14 08:30:16 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 138ms (Views: 134.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 143ms (Views: 140.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/main-fbe4693d28671362316d2bb620c6c98b.css?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/application-927f8eb76b4b4805a4c0ed45e6455d7e.css?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:30:34 -0400
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-14 08:30:41 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 122ms (Views: 118.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-14 08:31:36 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 126ms (Views: 123.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application-927f8eb76b4b4805a4c0ed45e6455d7e.css?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/main-fbe4693d28671362316d2bb620c6c98b.css?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:31:37 -0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-14 08:32:20 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 156ms (Views: 153.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-14 08:32:29 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.1ms)
+  Rendered posts/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 133ms (Views: 132.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-14 08:34:26 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (4.1ms)
+  Rendered posts/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 2177ms (Views: 2176.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main-ddaa86f38b740ea24691c4e1c1b48162.css?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/application-4d85137ce1e187c55a4201586b9ce4cc.css?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:29 -0400
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-14 08:34:46 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.6ms)
+  Rendered posts/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 2209ms (Views: 2207.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main-09e091b3312fbca7ce7cb5f1e520df8c.css?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/application-237dd36de8795e8895fb9aa48276f176.css?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:34:48 -0400
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-14 08:35:26 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (4.1ms)
+  Rendered posts/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 2352ms (Views: 2350.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main-3ffc6098d98eef62354ddcfe938d189e.css?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/application-c00f4a6e1c9ebbfc9942180c05232e9d.css?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:35:29 -0400
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-14 08:38:29 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.8ms)
+  Rendered posts/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 2070ms (Views: 2068.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main-e954b90a9a3329a1cd1aae4db13b27d8.css?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/application-612484ea28088fb7c178070186e42eff.css?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:38:31 -0400
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.9ms)
+  Rendered posts/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 125ms (Views: 124.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-612484ea28088fb7c178070186e42eff.css?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/main-e954b90a9a3329a1cd1aae4db13b27d8.css?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:39:24 -0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-14 08:41:22 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 143ms (Views: 140.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-14 08:41:34 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 2220ms (Views: 2217.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application-5d0f239ad5fecd44025cd3eb5a0da917.css?body=1" for 127.0.0.1 at 2014-10-14 08:41:36 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:36 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:36 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:36 -0400
+
+
+Started GET "/assets/main-305d3f322f07bb8f72949d4d276e4dd6.css?body=1" for 127.0.0.1 at 2014-10-14 08:41:36 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:37 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:37 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:37 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:37 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:37 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:37 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:37 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:37 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:37 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:37 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:37 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:37 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:41:37 -0400
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-14 08:41:42 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.0ms)
+  Rendered posts/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 128ms (Views: 126.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-14 08:41:45 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 151ms (Views: 147.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-10-14 08:41:47 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 125ms (Views: 121.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-10-14 08:44:20 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 2183ms (Views: 2179.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/main-bf6dd6a7ac4b0cd4101ce5bf16f20f5b.css?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/application-a15be978403b2d5f67f5c0b600c5fef2.css?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:44:23 -0400
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 126ms (Views: 123.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/main-bf6dd6a7ac4b0cd4101ce5bf16f20f5b.css?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/application-a15be978403b2d5f67f5c0b600c5fef2.css?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:25 -0400
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-10-14 08:45:46 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 115ms (Views: 112.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/main-bf6dd6a7ac4b0cd4101ce5bf16f20f5b.css?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/application-a15be978403b2d5f67f5c0b600c5fef2.css?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-14 08:45:47 -0400

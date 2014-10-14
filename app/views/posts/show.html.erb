@@ -1,12 +1,15 @@
 <%= notice %>
 
-<h2><%= @post.post_title %></h2>
+
 
 
 <article>
+  <h2 class="title"><%= @post.post_title %></h2>
+
   <p> <%= @post.post_content %><p>
+
   <p class="details">created on <%= @post.created_at.to_formatted_s(:long_ordinal) %> | in: <%= @post.category %></p>
-</article>
+
 
 
 <p>
@@ -14,15 +17,17 @@
   <%= link_to "edit this", edit_post_path(params[:id]) %>
 </p>
 
-<h3> comments </h3>
+<h3 class="title"> comments </h3>
 
   <% @post.comments.each do |comment| %>
     <p><%= comment.comment_text %> by <%= comment.comment_user %> at <%= comment.created_at %>
      | <%= link_to 'delete this', comment, method: :delete, data: { confirm: 'Are you sure?' } %></p>
   <% end %>
 
+</article>
 
-<h3> add a comment </h3>
+<div class="container">
+<h3 class="title"> add a comment </h3>
 
 <%= form_for @comment do |f| %>
   <p>
@@ -36,4 +41,5 @@
   <%= f.hidden_field :post_id %>
   <%= f.submit "Submit Comment" %>
 <% end %>
+</div>
 
