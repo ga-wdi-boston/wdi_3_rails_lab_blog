@@ -53,7 +53,7 @@ private
 
 
   def post_params
-    params.require(:post).permit(:post_title, :post_content, :post_user)
+    params.require(:post).permit(:post_title, :post_content, :post_user, :category)
   end
 
 

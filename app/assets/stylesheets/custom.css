@@ -1,0 +1,17 @@
+body {
+  padding: 15px;
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+}
+
+.details {
+  font-family: 'Pacifico', cursive;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 160%;
+}

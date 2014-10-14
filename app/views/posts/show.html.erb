@@ -5,20 +5,20 @@
 
 <article>
   <p> <%= @post.post_content %><p>
-  <p>created on <%= @post.created_at %> | in: <%= @post.category %></p>
+  <p class="details">created on <%= @post.created_at.to_formatted_s(:long_ordinal) %> | in: <%= @post.category %></p>
 </article>
 
 
-
-<%= link_to "back home", posts_path %>
-
-<%= link_to "edit this", edit_post_path(params[:id]) %>
+<p>
+  <%= link_to "back home", posts_path %> |
+  <%= link_to "edit this", edit_post_path(params[:id]) %>
+</p>
 
 <h3> comments </h3>
 
   <% @post.comments.each do |comment| %>
     <p><%= comment.comment_text %> by <%= comment.comment_user %> at <%= comment.created_at %>
-     |<%= link_to 'delete this', comment, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+     | <%= link_to 'delete this', comment, method: :delete, data: { confirm: 'Are you sure?' } %></p>
   <% end %>
 
 
