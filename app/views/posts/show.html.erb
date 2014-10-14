@@ -1,7 +1,7 @@
 <%= notice %>
 
 <h2><%= @post.post_title %></h2>
-<h3><%= @post.post_time %></h3>
+<h3><%=  %></h3>
 
 <article>
   <p> <%= @post.post_content %><p>
@@ -10,6 +10,14 @@
 <%= link_to "back home", posts_path %>
 
 <%= link_to "edit this", edit_post_path(params[:id]) %>
+
+<h3> comments </h3>
+
+<ul>
+  <%= @post.comments.each do |comment| %>
+    <li><%= comment.comment_text %> by <%= comment.comment_user %> at <%= comment.created_at %></li>
+  <% end %>
+</ul>
 
 <h3> add a comment </h3>
 
@@ -22,6 +30,7 @@
   <%= f.label "Enter your name" %>
   <%= f.text_field :comment_user %>
   </p>
+  <%= f.hidden_field :post_id %>
   <%= f.submit "Submit Comment" %>
 <% end %>
 

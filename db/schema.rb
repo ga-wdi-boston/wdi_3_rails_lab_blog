@@ -19,8 +19,9 @@ ActiveRecord::Schema.define(version: 20141009181555) do
   create_table "comments", force: true do |t|
     t.text     "comment_text", null: false
     t.string   "comment_user", null: false
-    t.datetime "comment_time"
     t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "comments", ["post_id"], name: "index_comments_on_post_id", using: :btree
@@ -28,8 +29,9 @@ ActiveRecord::Schema.define(version: 20141009181555) do
   create_table "posts", force: true do |t|
     t.string   "post_title",   null: false
     t.text     "post_content", null: false
-    t.datetime "post_time"
-    t.string   "post_user"
+    t.string   "post_user",    null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

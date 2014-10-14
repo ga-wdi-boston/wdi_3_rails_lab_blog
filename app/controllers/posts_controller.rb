@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 
 
   def index
-    @posts = Post.all.order(post_time: :asc)
+    @posts = Post.all
   end
 
   def show
@@ -53,7 +53,7 @@ private
 
 
   def post_params
-    params.require(:post).permit(:post_title, :post_content, :post_user, :post_time)
+    params.require(:post).permit(:post_title, :post_content, :post_user)
   end
 
 

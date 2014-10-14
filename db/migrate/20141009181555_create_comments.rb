@@ -3,8 +3,8 @@ class CreateComments < ActiveRecord::Migration
     create_table :comments do |t|
       t.text :comment_text, null: false
       t.string :comment_user, null: false
-      t.timestamp :comment_time
       t.belongs_to :post, index: true
+      t.timestamps
     end
   end
 end
