@@ -17761,3 +17761,1594 @@ Processing by PostsController#index as HTML
   [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
   Rendered posts/index.html.erb within layouts/application (11.4ms)
 Completed 200 OK in 104ms (Views: 100.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-13 23:09:12 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 6]]
+  Rendered posts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 148ms (Views: 146.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application-30755d02cb7a32bbecbdc7157fe2543c.css?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:09:13 -0400
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2014-10-13 23:12:20 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 5]]
+  Rendered posts/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 113ms (Views: 95.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 5]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  Rendered posts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 158ms (Views: 156.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/application-30755d02cb7a32bbecbdc7157fe2543c.css?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:13:03 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-13 23:14:47 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 6]]
+  Rendered posts/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 1538ms (Views: 1535.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:14:49 -0400
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-13 23:18:13 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.7ms)
+  Rendered posts/new.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 8ms
+
+ArgumentError (wrong number of arguments (1 for 4..6)):
+  app/views/posts/_form.html.erb:15:in `block in _app_views_posts__form_html_erb__4270500150564604395_69905617905000'
+  app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb__4270500150564604395_69905617905000'
+  app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__3050482080184087794_69905610431480'
+
+
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_source.erb (8.7ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (26.9ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-13 23:18:13 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (4.7ms)
+  Rendered posts/new.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 12ms
+
+ArgumentError (wrong number of arguments (1 for 4..6)):
+  app/views/posts/_form.html.erb:15:in `block in _app_views_posts__form_html_erb__4270500150564604395_69905616978660'
+  app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb__4270500150564604395_69905616978660'
+  app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__3050482080184087794_69905613534980'
+
+
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_source.erb (7.0ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_trace.html.erb (27.1ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (49.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddCategoryToPosts (20141014032205)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (17.6ms)[0m  [1mALTER TABLE "posts" ADD COLUMN "category" character varying[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141014032205"]]
+  [1m[36m (9.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 6]]
+  Rendered posts/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 181ms (Views: 173.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:04 -0400
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-13 23:24:07 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (4.1ms)
+  Rendered posts/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 129ms (Views: 128.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ksylSxuhI0UP3vmQx7qqrpkfXmCvqQlxK991vwtAOpjsaF1LJRs/jJaFAlRliw/8xq6pkKsvlNWOk3IXzHhNXg==", "post"=>{"post_title"=>"best day ever", "post_content"=>"shayna", "category"=>"cats", "post_user"=>"shayna"}, "commit"=>"Create Post"}
+Unpermitted parameter: category
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "posts" ("created_at", "post_content", "post_title", "post_user", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-10-14 03:24:17.179125"], ["post_content", "shayna"], ["post_title", "best day ever"], ["post_user", "shayna"], ["updated_at", "2014-10-14 03:24:17.179125"]]
+  [1m[36m (66.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 74ms (ActiveRecord: 67.3ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.8ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 7]]
+PG::FeatureNotSupported: ERROR:  cached plan must not change result type
+: SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  Rendered posts/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 115ms (Views: 105.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:24:17 -0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-13 23:24:20 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 5]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  Rendered posts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 129ms (Views: 126.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 5]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  Rendered posts/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 129ms (Views: 125.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:25:26 -0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-13 23:26:03 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 5]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  Rendered posts/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 155ms (Views: 151.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:04 -0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 5]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  Rendered posts/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 121ms (Views: 118.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:28 -0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 5]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  Rendered posts/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 140ms (Views: 136.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:26:47 -0400
+  [1m[36m (5007.0ms)[0m  [1mDROP DATABASE IF EXISTS "RailsBlog_development"[0m
+PG::ObjectInUse: ERROR:  database "RailsBlog_development" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+: DROP DATABASE IF EXISTS "RailsBlog_development"
+  [1m[35m (258.6ms)[0m  DROP DATABASE IF EXISTS "RailsBlog_test"
+  [1m[36m (0.4ms)[0m  [1mCREATE DATABASE "RailsBlog_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "RailsBlog_development" already exists
+: CREATE DATABASE "RailsBlog_development" ENCODING = 'unicode'
+  [1m[35m (1244.7ms)[0m  CREATE DATABASE "RailsBlog_test" ENCODING = 'unicode'
+  [1m[36m (5007.5ms)[0m  [1mDROP DATABASE IF EXISTS "RailsBlog_development"[0m
+PG::ObjectInUse: ERROR:  database "RailsBlog_development" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+: DROP DATABASE IF EXISTS "RailsBlog_development"
+  [1m[36m (5007.5ms)[0m  [1mDROP DATABASE IF EXISTS "RailsBlog_development"[0m
+PG::ObjectInUse: ERROR:  database "RailsBlog_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+: DROP DATABASE IF EXISTS "RailsBlog_development"
+  [1m[35m (243.8ms)[0m  DROP DATABASE IF EXISTS "RailsBlog_test"
+  [1m[36m (0.9ms)[0m  [1mCREATE DATABASE "RailsBlog_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "RailsBlog_development" already exists
+: CREATE DATABASE "RailsBlog_development" ENCODING = 'unicode'
+  [1m[35m (876.1ms)[0m  CREATE DATABASE "RailsBlog_test" ENCODING = 'unicode'
+  [1m[36m (5007.5ms)[0m  [1mDROP DATABASE IF EXISTS "RailsBlog_development"[0m
+PG::ObjectInUse: ERROR:  database "RailsBlog_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+: DROP DATABASE IF EXISTS "RailsBlog_development"
+  [1m[36m (224.3ms)[0m  [1mDROP DATABASE IF EXISTS "RailsBlog_development"[0m
+  [1m[35m (223.2ms)[0m  DROP DATABASE IF EXISTS "RailsBlog_test"
+  [1m[36m (578.5ms)[0m  [1mCREATE DATABASE "RailsBlog_development" ENCODING = 'unicode'[0m
+  [1m[35m (601.6ms)[0m  CREATE DATABASE "RailsBlog_test" ENCODING = 'unicode'
+  [1m[36m (217.9ms)[0m  [1mDROP DATABASE IF EXISTS "RailsBlog_development"[0m
+  [1m[35m (709.9ms)[0m  CREATE DATABASE "RailsBlog_development" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (132.2ms)[0m  CREATE TABLE "comments" ("id" serial primary key, "comment_text" text, "comment_user" character varying NOT NULL, "post_id" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (41.1ms)[0m  [1mCREATE  INDEX  "index_comments_on_post_id" ON "comments" USING btree ("post_id")[0m
+  [1m[35m (88.2ms)[0m  CREATE TABLE "posts" ("id" serial primary key, "post_title" character varying NOT NULL, "post_content" text NOT NULL, "post_user" character varying NOT NULL, "created_at" timestamp, "updated_at" timestamp, "category" character varying) 
+  [1m[36m (51.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (43.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.7ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (9.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141014032205')
+  [1m[36m (11.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141009181300')[0m
+  [1m[35m (10.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141009181555')
+  [1m[36m (824.2ms)[0m  [1mDROP DATABASE IF EXISTS "RailsBlog_test"[0m
+  [1m[35m (765.2ms)[0m  CREATE DATABASE "RailsBlog_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (110.2ms)[0m  CREATE TABLE "comments" ("id" serial primary key, "comment_text" text, "comment_user" character varying NOT NULL, "post_id" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (52.0ms)[0m  [1mCREATE  INDEX  "index_comments_on_post_id" ON "comments" USING btree ("post_id")[0m
+  [1m[35m (76.2ms)[0m  CREATE TABLE "posts" ("id" serial primary key, "post_title" character varying NOT NULL, "post_content" text NOT NULL, "post_user" character varying NOT NULL, "created_at" timestamp, "updated_at" timestamp, "category" character varying) 
+  [1m[36m (53.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (42.3ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (21.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141014032205')
+  [1m[36m (10.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141009181300')[0m
+  [1m[35m (11.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141009181555')
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "posts" ("created_at", "post_content", "post_title", "post_user", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-10-14 03:28:55.105462"], ["post_content", "we went to the zoo!"], ["post_title", "best day ever"], ["post_user", "Shayna"], ["updated_at", "2014-10-14 03:28:55.105462"]]
+  [1m[35m (4.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("created_at", "post_content", "post_title", "post_user", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-10-14 03:28:55.115687"], ["post_content", "I fell down the stairs"], ["post_title", "worst day ever"], ["post_user", "Shayna"], ["updated_at", "2014-10-14 03:28:55.115687"]]
+  [1m[36m (8.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("created_at", "post_content", "post_title", "post_user", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-10-14 03:28:55.127111"], ["post_content", "ice cream is my favorite"], ["post_title", "life is rad"], ["post_user", "Shayna"], ["updated_at", "2014-10-14 03:28:55.127111"]]
+  [1m[35m (7.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("created_at", "post_content", "post_title", "post_user", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-10-14 03:28:55.138454"], ["post_content", "this is new post content"], ["post_title", "this is a cool new post"], ["post_user", "Sean"], ["updated_at", "2014-10-14 03:28:55.138454"]]
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("created_at", "post_content", "post_title", "post_user", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-10-14 03:28:55.149497"], ["post_content", "this is new post content"], ["post_title", "coolstuff"], ["post_user", "Sean"], ["updated_at", "2014-10-14 03:28:55.149497"]]
+  [1m[35m (7.1ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "comments" ("comment_text", "comment_user", "created_at", "post_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["comment_text", "woohoo"], ["comment_user", "sean"], ["created_at", "2014-10-14 03:28:55.170657"], ["post_id", 1], ["updated_at", "2014-10-14 03:28:55.170657"]]
+  [1m[36m (8.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "comments" ("comment_text", "comment_user", "created_at", "post_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment_text", "that sucks"], ["comment_user", "anna"], ["created_at", "2014-10-14 03:28:55.183027"], ["post_id", 2], ["updated_at", "2014-10-14 03:28:55.183027"]]
+  [1m[35m (5.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "comments" ("comment_text", "comment_user", "created_at", "post_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["comment_text", "woohoo"], ["comment_user", "shayna"], ["created_at", "2014-10-14 03:28:55.194016"], ["post_id", 1], ["updated_at", "2014-10-14 03:28:55.194016"]]
+  [1m[36m (7.1ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-13 23:29:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  Rendered posts/index.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 223ms (Views: 204.4ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:19 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:19 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:19 -0400
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:29:19 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:19 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:19 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:19 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:19 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:19 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:19 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:20 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:20 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:20 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:20 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:20 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:20 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:20 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:20 -0400
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-13 23:29:22 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 151ms (Views: 134.8ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jt5EE89NhNQR3cSaSZlnBETBRz2r/cGT8cjxvPhfGRZYerwT8feYHYiGP17rqMJWG3Cwza97XDdUhPYUP2du0A==", "comment"=>{"comment_text"=>"aha!", "comment_user"=>"shayna", "post_id"=>"1"}, "commit"=>"Submit Comment"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "comments" ("comment_text", "comment_user", "created_at", "post_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment_text", "aha!"], ["comment_user", "shayna"], ["created_at", "2014-10-14 03:29:30.484464"], ["post_id", 1], ["updated_at", "2014-10-14 03:29:30.484464"]]
+  [1m[35m (29.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 39ms (ActiveRecord: 31.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 124ms (Views: 120.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:30 -0400
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FiJew5L5ZPRKH6RIaDO605p9171WLLaKHE6KrFYGXrJohqbDrEN4PdNEX4zKAh+BxcwgTVKqKy65Ao0EkT4pdA==", "comment"=>{"comment_text"=>"i can has cheezbrger", "comment_user"=>"shayna", "post_id"=>"1"}, "commit"=>"Submit Comment"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("comment_text", "comment_user", "created_at", "post_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment_text", "i can has cheezbrger"], ["comment_user", "shayna"], ["created_at", "2014-10-14 03:29:40.499262"], ["post_id", 1], ["updated_at", "2014-10-14 03:29:40.499262"]]
+  [1m[35m (76.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 85ms (ActiveRecord: 77.8ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 114ms (Views: 109.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:40 -0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-13 23:29:48 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  Rendered posts/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 103ms (Views: 100.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-10-13 23:29:50 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 103ms (Views: 100.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-10-13 23:29:54 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J9yrgQeahOcb9lCss9V0yOBNHBoM+bMAyCZ/M8KdyKNZeFOBOSCYLoKtq2gR5NGav/zr6gh/LqRtanibBaW/ZQ==", "comment"=>{"comment_text"=>"oh hey cool", "comment_user"=>"shayna", "post_id"=>"4"}, "commit"=>"Submit Comment"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("comment_text", "comment_user", "created_at", "post_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment_text", "oh hey cool"], ["comment_user", "shayna"], ["created_at", "2014-10-14 03:29:54.773985"], ["post_id", 4], ["updated_at", "2014-10-14 03:29:54.773985"]]
+  [1m[35m (60.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 67ms (ActiveRecord: 61.7ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-10-13 23:29:54 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 107ms (Views: 103.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:29:55 -0400
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fV70HHbZEdswRyX/Qg48U6dv6eQkF75P7Cu84lO7LocD+gwcSGMNEqkc3jvgP5kB+N4eFCCRI+tJZ7tKlINZQQ==", "comment"=>{"comment_text"=>"oh neato", "comment_user"=>"shayna", "post_id"=>"4"}, "commit"=>"Submit Comment"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("comment_text", "comment_user", "created_at", "post_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment_text", "oh neato"], ["comment_user", "shayna"], ["created_at", "2014-10-14 03:30:00.232164"], ["post_id", 4], ["updated_at", "2014-10-14 03:30:00.232164"]]
+  [1m[35m (71.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 78ms (ActiveRecord: 72.2ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 103ms (Views: 100.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:00 -0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-13 23:30:03 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  Rendered posts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 108ms (Views: 104.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-13 23:30:12 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 95ms (Views: 93.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-10-13 23:30:18 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (2.7ms)
+  Rendered posts/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 101ms (Views: 98.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/posts/1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O8Vpq171PD0mlbjGa+U/hfXjOs7eyIoJsGzWXAHFSbVFYZGrYE8g9L/OQwLJ1JrXqlLNPtpOF60VINH0xv0+cw==", "post"=>{"post_title"=>"best day ever", "post_content"=>"we went to the zoo!", "category"=>"animals", "post_user"=>"Shayna"}, "commit"=>"Update Post", "id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: category
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 114ms (Views: 110.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:30:21 -0400
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-13 23:31:20 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (17.7ms)
+Completed 500 Internal Server Error in 24ms
+
+NameError (undefined local variable or method `post' for #<#<Class:0x007f4c71b10598>:0x007f4c7228f940>):
+  app/views/posts/show.html.erb:4:in `_app_views_posts_show_html_erb__4333651550630978548_69983154759480'
+
+
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (31.8ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 149ms (Views: 146.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:31:28 -0400
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 109ms (Views: 103.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:34 -0400
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 102ms (Views: 99.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:51 -0400
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 108ms (Views: 104.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-042252d91fc65d100a673a3ef19578c9.css?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/bootstrap/affix-04c58ad484d0bdbdf9514b7d09505d25.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/bootstrap/alert-8186e091f2fa7c9423e9cadae6ce4de4.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/bootstrap/button-c9d4d44342d7be7abeb23fb0edbe00b7.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/bootstrap/carousel-b0f1e7b56803d98d500f5ccc15d550e3.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/bootstrap/collapse-417aacb8b3257798b481ed397b421b7c.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/bootstrap/dropdown-f5a24e96d563b9a6d252c1c07a6ecc6b.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/bootstrap/tab-dec75af9b2ffeed03dc43eabdb771d48.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/bootstrap/transition-3005c626234d995c29e4bcbd07b3ac0c.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/bootstrap/modal-82015eda5031618c5aba3ebf9fc2cf4b.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy-f421d662af4612a610656bfeee3407d9.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/bootstrap/tooltip-5e9e765caafcbcb1672a3e72ef7f4a3a.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/bootstrap-sprockets-99470846ba99b7073a929a36d4cee32a.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/bootstrap/popover-df8ed104d2525bbc4b4dad060e68cf99.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400
+
+
+Started GET "/assets/application-171ee1718c48284f4c91da9359dc99cb.js?body=1" for 127.0.0.1 at 2014-10-13 23:32:56 -0400

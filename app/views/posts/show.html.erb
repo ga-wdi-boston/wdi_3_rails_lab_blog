@@ -1,11 +1,14 @@
 <%= notice %>
 
 <h2><%= @post.post_title %></h2>
-<h3><%=  %></h3>
+
 
 <article>
   <p> <%= @post.post_content %><p>
+  <p>created on <%= @post.created_at %> | in: <%= @post.category %></p>
 </article>
+
+
 
 <%= link_to "back home", posts_path %>
 

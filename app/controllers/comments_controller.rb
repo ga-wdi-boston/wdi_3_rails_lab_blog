@@ -14,8 +14,11 @@ end
 
 def create
   @comment = Comment.create(comment_params)
-  @comment.save
-  redirect_to @comment.post
+  if @comment.save
+    redirect_to @comment.post, notice: "thanks for your comment!"
+  else
+    render :new
+  end
 end
 
 def destroy
