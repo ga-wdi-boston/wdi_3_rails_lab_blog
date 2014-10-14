@@ -1,19 +1,14 @@
 class CommentsController < ApplicationController
 
-def new
-  @comment = Comment.new
-end
-
 def create
-  binding.pry
-  @comment = Comment.new(comment_params)
+  @comment = Comment.create(comment_params)
   @comment.save
-  redirect_to post_path
+  redirect_to @post.comment
 end
 
 private
 
   def comment_params
-    params.require(:comment).permit(:id, :comment_text, :post_id)
+    params.require(:comment).permit(:comment_user, :comment_text, :post_id)
   end
 end

@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :find_post, only: [:show, :edit, :update, :destroy]
+  # before_action :find_post, only: [:show, :edit, :update, :destroy]
 
 
   def index
@@ -8,7 +8,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    @comment = Comment.new(post_id: params[:id])
+    @comment = @post.comments.new
   end
 
   def new
@@ -20,7 +20,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = Post.create(post_params)
     if @post.save
       redirect_to @post, notice: "created!"
     else
