@@ -2,7 +2,7 @@
 
 <ul>
   <% @posts.each do |post| %>
-    <li><img src="http://i.imgur.com/bPCKMO4.gif" width = 70px><%= link_to post.post_title, post %> by <%= post.post_user %> at <%=  post.created_at %></li>
+    <li><img src="http://i.imgur.com/bPCKMO4.gif" width = 70px><%= link_to post.post_title, post %> by <%= post.post_user %> at <%=  post.created_at %> | <%= post.comments.count %> comments </li>
   <% end %>
 </ul>
 

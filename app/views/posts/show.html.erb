@@ -13,11 +13,11 @@
 
 <h3> comments </h3>
 
-<ul>
-  <%= @post.comments.each do |comment| %>
-    <li><%= comment.comment_text %> by <%= comment.comment_user %> at <%= comment.created_at %></li>
+  <% @post.comments.each do |comment| %>
+    <p><%= comment.comment_text %> by <%= comment.comment_user %> at <%= comment.created_at %>
+     |<%= link_to 'delete this', comment, method: :delete, data: { confirm: 'Are you sure?' } %></p>
   <% end %>
-</ul>
+
 
 <h3> add a comment </h3>
 
