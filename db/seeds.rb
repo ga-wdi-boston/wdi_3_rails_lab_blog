@@ -1,4 +1,5 @@
 
+
 post1 = Post.create(post_title: "best day ever", post_content: "we went to the zoo!", user_id: 1)
 
 
@@ -17,6 +18,8 @@ comment1 = Comment.create(comment_text: "woohoo", user_id: 1 , post_id: 1)
 comment2 = Comment.create(comment_text: "that sucks", user_id: 1 , post_id: 2)
 
 comment3 = Comment.create(comment_text: "woohoo", user_id: 1 , post_id: 1)
+
+
 
 
 # This file should contain all the record creation needed to seed the database with its default values.

@@ -31183,3 +31183,591 @@ Processing by PostsController#index as HTML
   [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
   Rendered shared/_login_items.html.erb (0.2ms)
 Completed 200 OK in 124ms (Views: 121.7ms | ActiveRecord: 1.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "posts" ("created_at", "post_content", "post_title", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-10-15 01:07:56.732656"], ["post_content", "we went to the zoo!"], ["post_title", "best day ever"], ["updated_at", "2014-10-15 01:07:56.732656"], ["user_id", 1]]
+  [1m[35m (15.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("created_at", "post_content", "post_title", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-10-15 01:07:56.756124"], ["post_content", "I fell down the stairs"], ["post_title", "worst day ever"], ["updated_at", "2014-10-15 01:07:56.756124"], ["user_id", 1]]
+  [1m[36m (90.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("created_at", "post_content", "post_title", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-10-15 01:07:56.850801"], ["post_content", "ice cream is my favorite"], ["post_title", "life is rad"], ["updated_at", "2014-10-15 01:07:56.850801"], ["user_id", 1]]
+  [1m[35m (11.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("created_at", "post_content", "post_title", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-10-15 01:07:56.866721"], ["post_content", "this is new post content"], ["post_title", "this is a cool new post"], ["updated_at", "2014-10-15 01:07:56.866721"], ["user_id", 1]]
+  [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("created_at", "post_content", "post_title", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-10-15 01:07:56.876997"], ["post_content", "this is new post content"], ["post_title", "coolstuff"], ["updated_at", "2014-10-15 01:07:56.876997"], ["user_id", 1]]
+  [1m[35m (8.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "comments" ("comment_text", "created_at", "post_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["comment_text", "woohoo"], ["created_at", "2014-10-15 01:07:56.899410"], ["post_id", 1], ["updated_at", "2014-10-15 01:07:56.899410"], ["user_id", 1]]
+  [1m[36m (6.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("comment_text", "created_at", "post_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment_text", "that sucks"], ["created_at", "2014-10-15 01:07:56.910466"], ["post_id", 2], ["updated_at", "2014-10-15 01:07:56.910466"], ["user_id", 1]]
+  [1m[35m (8.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "comments" ("comment_text", "created_at", "post_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["comment_text", "woohoo"], ["created_at", "2014-10-15 01:07:56.922146"], ["post_id", 1], ["updated_at", "2014-10-15 01:07:56.922146"], ["user_id", 1]]
+  [1m[36m (6.8ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-14 21:08:02 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 14]]
+  Rendered posts/index.html.erb within layouts/application (20.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_login_items.html.erb (0.2ms)
+Completed 200 OK in 148ms (Views: 143.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides-ef19b7e507651abb6b6835d9fd5e123a.css?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-be561a5499f1ff65a1a258bfa713f114.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-0fda4d0e44525d3642b9a6b986d355ab.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-63d67381b88373d27e46dda95c6bb6d9.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-c2e3d4dd3e9a4db6da49461546fdd217.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-e3872c7877ef3154f232347db3aa5259.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-9c5bc771c9b1ec60ea2ad28eb592e5d5.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-ea8e574843a0f7c6b4dfaec36c4e4320.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-4a67c473ea478576a8213fd5a241b416.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-d2519b6b6a3fcae72b51d7d500a199d6.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-da2bf89a659a8b899630b4a0bdf5718a.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-bbb12a550e762a644e0f93432a3b733d.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-d5b0982bd5d0c82844e8532370277c30.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap-183bf465ef3f4d1bcc11c7fe337c0586.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/assets/bootstrap-775504da1d9c85ad8845affd8af349d4.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:03 -0400
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2014-10-14 21:08:06 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "9"]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 9]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (5.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_login_items.html.erb (0.4ms)
+Completed 200 OK in 132ms (Views: 127.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/9/edit" for 127.0.0.1 at 2014-10-14 21:08:09 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "9"]]
+  Rendered posts/_form.html.erb (2.4ms)
+  Rendered posts/edit.html.erb within layouts/application (4.4ms)
+  Rendered shared/_login_items.html.erb (0.2ms)
+Completed 200 OK in 126ms (Views: 120.5ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/posts/9" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SKpxZOjg8OBGeih11TxV5YohxnVo56CUiJKxYdZ4eRM2Dolk1lrsKd8h07F3DfC31ZAxhWxhPTAt3rbJEUAO1Q==", "id"=>"9"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = $1  [["id", 9]]
+  [1m[36m (9.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 16ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 14]]
+  Rendered posts/index.html.erb within layouts/application (20.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_login_items.html.erb (0.2ms)
+Completed 200 OK in 148ms (Views: 143.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-ef19b7e507651abb6b6835d9fd5e123a.css?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-be561a5499f1ff65a1a258bfa713f114.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-0fda4d0e44525d3642b9a6b986d355ab.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-63d67381b88373d27e46dda95c6bb6d9.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-e3872c7877ef3154f232347db3aa5259.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-c2e3d4dd3e9a4db6da49461546fdd217.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-9c5bc771c9b1ec60ea2ad28eb592e5d5.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-ea8e574843a0f7c6b4dfaec36c4e4320.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-4a67c473ea478576a8213fd5a241b416.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-d2519b6b6a3fcae72b51d7d500a199d6.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-da2bf89a659a8b899630b4a0bdf5718a.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-bbb12a550e762a644e0f93432a3b733d.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-d5b0982bd5d0c82844e8532370277c30.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/twitter/bootstrap-183bf465ef3f4d1bcc11c7fe337c0586.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/assets/bootstrap-775504da1d9c85ad8845affd8af349d4.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:13 -0400
+
+
+Started GET "/posts/14" for 127.0.0.1 at 2014-10-14 21:08:21 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "14"]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 14]]
+  Rendered posts/show.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_login_items.html.erb (0.2ms)
+Completed 200 OK in 137ms (Views: 132.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-10-14 21:08:23 -0400
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q3hd2Yqmg0ymQ4mbwPwsgmy+d0dCsGwrOgzS6w5iyXE93KXZtByfhT8Ycl9izYnQMw+At0Y28Y+fQNVDyVq+tw==", "comment"=>{"comment_text"=>"woot!", "post_id"=>"14", "user_id"=>""}, "commit"=>"Submit Comment"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("comment_text", "created_at", "post_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["comment_text", "woot!"], ["created_at", "2014-10-15 01:08:23.905940"], ["post_id", 14], ["updated_at", "2014-10-15 01:08:23.905940"]]
+  [1m[36m (37.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "comments" SET "updated_at" = $1, "user_id" = $2 WHERE "comments"."id" = 7[0m  [["updated_at", "2014-10-15 01:08:23.946624"], ["user_id", 1]]
+  [1m[35m (30.7ms)[0m  COMMIT
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 14]]
+Redirected to http://localhost:3000/posts/14
+Completed 302 Found in 82ms (ActiveRecord: 70.4ms)
+
+
+Started GET "/posts/14" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "14"]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 14]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (7.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_login_items.html.erb (0.2ms)
+Completed 200 OK in 131ms (Views: 126.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-be561a5499f1ff65a1a258bfa713f114.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-0fda4d0e44525d3642b9a6b986d355ab.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-63d67381b88373d27e46dda95c6bb6d9.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides-ef19b7e507651abb6b6835d9fd5e123a.css?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-c2e3d4dd3e9a4db6da49461546fdd217.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-e3872c7877ef3154f232347db3aa5259.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-9c5bc771c9b1ec60ea2ad28eb592e5d5.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-ea8e574843a0f7c6b4dfaec36c4e4320.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-4a67c473ea478576a8213fd5a241b416.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-da2bf89a659a8b899630b4a0bdf5718a.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-d2519b6b6a3fcae72b51d7d500a199d6.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-bbb12a550e762a644e0f93432a3b733d.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap-183bf465ef3f4d1bcc11c7fe337c0586.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-d5b0982bd5d0c82844e8532370277c30.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/assets/bootstrap-775504da1d9c85ad8845affd8af349d4.js?body=1" for 127.0.0.1 at 2014-10-14 21:08:24 -0400
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-14 21:08:27 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 12]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 14]]
+  Rendered posts/index.html.erb within layouts/application (17.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_login_items.html.erb (0.2ms)
+Completed 200 OK in 140ms (Views: 136.4ms | ActiveRecord: 2.8ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-10-14 21:08:38 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GM2yBqnuudQDdZw6P7IT0wQ4VjSUfIJpeUk6J514L7dmaUoGl1SlHZouZ/6dg7aBW4mhxJD6H83cBT2PWkBYcQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 31ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 21:08:38 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 14]]
+  Rendered posts/index.html.erb within layouts/application (24.1ms)
+Completed 500 Internal Server Error in 150ms
+
+NoMethodError (undefined method `email' for nil:NilClass):
+  app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__1128692189557758521_69908838596740'
+
+
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (21.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 21:09:29 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 12]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 14]]
+  Rendered posts/index.html.erb within layouts/application (14.1ms)
+  Rendered shared/_login_items.html.erb (0.5ms)
+Completed 500 Internal Server Error in 155ms
+
+NoMethodError (undefined method `email' for nil:NilClass):
+  app/views/layouts/application.html.erb:39:in `_app_views_layouts_application_html_erb__1128692189557758521_69908836756040'
+
+
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_source.erb (5.9ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (22.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 21:09:53 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 14]]
+  Rendered posts/index.html.erb within layouts/application (17.4ms)
+  Rendered shared/_login_items.html.erb (0.4ms)
+Completed 200 OK in 155ms (Views: 150.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-ef19b7e507651abb6b6835d9fd5e123a.css?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/jquery_ujs-03cb26c4b41579fc5e95ea8f47ac5e18.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/jquery-6a50177757f6c64493882fb7aae952c3.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-be561a5499f1ff65a1a258bfa713f114.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-0fda4d0e44525d3642b9a6b986d355ab.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-c2e3d4dd3e9a4db6da49461546fdd217.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-63d67381b88373d27e46dda95c6bb6d9.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-9c5bc771c9b1ec60ea2ad28eb592e5d5.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-e3872c7877ef3154f232347db3aa5259.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-ea8e574843a0f7c6b4dfaec36c4e4320.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-4a67c473ea478576a8213fd5a241b416.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-da2bf89a659a8b899630b4a0bdf5718a.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-d2519b6b6a3fcae72b51d7d500a199d6.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-bbb12a550e762a644e0f93432a3b733d.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-d5b0982bd5d0c82844e8532370277c30.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap-183bf465ef3f4d1bcc11c7fe337c0586.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/turbolinks-ebcce04d6463d2d77b51c18291df6925.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/assets/bootstrap-775504da1d9c85ad8845affd8af349d4.js?body=1" for 127.0.0.1 at 2014-10-14 21:09:54 -0400
+
+
+Started GET "/posts/14" for 127.0.0.1 at 2014-10-14 21:09:57 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 14]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "14"]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 14]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.3ms)
+  Rendered shared/_login_items.html.erb (0.4ms)
+Completed 200 OK in 130ms (Views: 127.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/14/edit" for 127.0.0.1 at 2014-10-14 21:09:59 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 14]]
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-14 21:09:59 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/devise-3.4.0/app/views/devise/shared/_links.html.erb (6.9ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/devise-3.4.0/app/views/devise/sessions/new.html.erb within layouts/application (16.5ms)
+  Rendered shared/_login_items.html.erb (0.4ms)
+Completed 200 OK in 136ms (Views: 133.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-14 21:10:02 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 14]]
+  Rendered posts/index.html.erb within layouts/application (12.4ms)
+  Rendered shared/_login_items.html.erb (0.5ms)
+Completed 200 OK in 135ms (Views: 132.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/11" for 127.0.0.1 at 2014-10-14 21:10:06 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "11"]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 11]]
+  Rendered posts/show.html.erb within layouts/application (3.5ms)
+  Rendered shared/_login_items.html.erb (0.4ms)
+Completed 200 OK in 127ms (Views: 122.7ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/comments" for 127.0.0.1 at 2014-10-14 21:10:10 -0400
+
+ActionController::RoutingError (No route matches [DELETE] "/comments"):
+  web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /home/shayna/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/shayna/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/shayna/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (23.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-14 21:10:14 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 14]]
+  Rendered posts/index.html.erb within layouts/application (18.1ms)
+  Rendered shared/_login_items.html.erb (0.5ms)
+Completed 200 OK in 153ms (Views: 150.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-14 21:10:18 -0400
+Processing by PostsController#new as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-14 21:10:18 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/devise-3.4.0/app/views/devise/shared/_links.html.erb (3.8ms)
+  Rendered /home/shayna/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/devise-3.4.0/app/views/devise/sessions/new.html.erb within layouts/application (8.7ms)
+  Rendered shared/_login_items.html.erb (0.4ms)
+Completed 200 OK in 127ms (Views: 124.7ms | ActiveRecord: 0.0ms)
