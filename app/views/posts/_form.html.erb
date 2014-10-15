@@ -16,10 +16,7 @@
     <%= f.text_field :category %>
   </p>
 
-  <p class="formtext">
-    <%= f.label "Your Username" %>
-    <%= f.text_field :post_user %>
-  </p>
+  <%= f.hidden_field :user_id %>
 
   <p class="formtext">
   <%= f.submit %>

@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  before_action :find_comment, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:show, :index]
 
 def index
   @comments = Comment.all
@@ -8,12 +10,13 @@ def show
   @comment = Comment.find(params[:id])
 end
 
-# def new
-#   @comment = Comment.new
-# end
+def new
+  @comment = Comment.new
+end
 
 def create
   @comment = Comment.create(comment_params)
+  @comment.user = current_user
   if @comment.save
     redirect_to @comment.post, notice: "thanks for your comment!"
   else
@@ -35,6 +38,6 @@ private
   end
 
   def comment_params
-    params.require(:comment).permit(:comment_user, :comment_text, :created_at, :post_id)
+    params.require(:comment).permit(:comment_text, :created_at, :post_id, :user_id)
   end
 end

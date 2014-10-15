@@ -2,7 +2,7 @@
 
 <ul>
   <% @posts.each do |post| %>
-    <li><%= link_to post.post_title, post %> by <%= post.post_user %> | <%=  post.created_at.to_formatted_s(:long_ordinal) %> | <%= post.comments.count %> comments </li>
+    <li><%= link_to post.post_title, post %> by <%= post.user.email %> | <%=  post.created_at.to_formatted_s(:long_ordinal) %> | <%= post.comments.count %> comments </li>
   <% end %>
 </ul>
 
