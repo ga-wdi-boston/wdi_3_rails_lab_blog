@@ -1,3 +1,21 @@
+# Jason's Travelog
+<a href="http://json-travelog.herokuapp.com" title="Jason's Travelog">Visit the blog here</a>
+
+## Specs:
+
+* User authentication with devise. 
+* Authorized actions for registered users. No creation/deletion without authorized account signin
+* Image hosting via AWS S3 server.
+* Commenting on articles, connecting comment to user account—no anonymous comments!
+* Search for your favorite categories!
+* User dashboard featuring only user's articles, and selected information about users on the site
+* WYSIWYG editor allows rich html editing
+* Full-bleed image slider on landing page
+* Articles, comments, and categories validate proper information
+* #nobootstrap
+* #nofoundation
+* #noframeworks
+
 # Rails Blog with has_many
 
 Make a blog. It will have posts. The posts have comments. This is for you to practice and explore. Use everything we've learned so far. Push yourself as far as you can. 

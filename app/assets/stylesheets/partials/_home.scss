@@ -1,0 +1,30 @@
+.home-index {
+  margin-top: 60px;
+  .sidebar {
+
+  }
+
+  .grid-container{
+
+    margin-top: 25px;
+
+    .grid-item{
+      height: 200px; 
+      overflow-y: hidden;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      a { text-decoration: none; }
+      img.blurb-thumbnail { width: auto; height: 100%; }
+      .article-meta {
+        position: absolute;
+        bottom: 0;
+        padding: 15px; 
+        color: $white;
+        h3 { margin: 0; padding: 0; }
+
+      }
+    }
+  }
+}

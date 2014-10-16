@@ -1,0 +1,119 @@
+.slider {
+
+  z-index: $z-body;
+
+  .slider-container {
+    @include defaults;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    .slider-photos {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      img.slider-photo { width: 100vw; height: auto; }
+    }
+
+    .slider-captions {
+      box-sizing: border-box;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 250px;
+      margin: 0;
+      padding: 0;
+      // bottom: 0;
+      @include transition(all, 0.5s, ease, 0);
+
+      a { text-decoration: none; color: $black; }
+
+      &.show { opacity: 1 }
+      .caption-content {
+        display: block;
+        float: none;
+        color: #000;
+        text-shadow: 0 0 1px #000;
+        font-size: 18px;
+
+        box-sizing: border-box;
+        padding: 20px;
+        border-radius: 0px;
+        background: rgba(255,255,255,0.6);
+      }
+    }
+
+    .slider-nav {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      bottom: 50px;
+
+      a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 15px;
+        cursor: pointer;
+        background: #999;
+        font-size: 24px;
+        color:white;
+        background-color: #000;
+
+        &.selected {  
+          background-color: $black-50;
+          color: $black;
+          border: 2px solid black;
+        }
+      }
+    }
+
+    .slider-step {
+      position: relative;
+      top: 300px;
+      width: 100%;
+      a.slider-nav-prev, a.slider-nav-next { 
+        background: #fff;
+        width: 48px;
+        height: 48px;
+        border-radius: 24px;
+        text-align: center;
+        text-decoration: none;
+        span { font-size: 35px; font-family: $header-font; }
+      }
+      a.slider-nav-prev {
+        float: left;
+        margin-left: 30px;
+      }
+      a.slider-nav-next {
+        float: right;
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .slide {
+    display:none;
+  }
+}
+
+.show-article {
+  margin-top: 60px;
+
+  .article-content {
+    img.featured-image {
+      max-width: 100%;
+    }
+  }
+  .sidebar {
+    margin-top: 80px;
+  }
+}
+
+.edit-article, .new-article {
+  margin-top: 80px;
+}
