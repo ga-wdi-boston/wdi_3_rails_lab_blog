@@ -1,0 +1,27 @@
+<%= form_for @post do |f| %>
+
+<div class="container">
+  <p class="formtext">
+    <%= f.label "Title of Post" %>
+    <%= f.text_field :post_title %>
+  </p>
+
+  <p class="formtext">
+    <%= f.label "Post Content" %>
+    <%= f.text_field :post_content %>
+  </p>
+
+  <p class="formtext">
+    <%= f.label "Category" %>
+    <%= f.text_field :category %>
+  </p>
+
+  <%= f.hidden_field :user_id %>
+
+  <p class="formtext">
+  <%= f.submit %>
+  </p>
+
+  <% end %>
+</div>
+

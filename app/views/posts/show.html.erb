@@ -1,0 +1,45 @@
+<%= notice %>
+
+
+
+
+<article>
+  <h2 class="title"><%= @post.post_title %></h2>
+
+  <p> <%= @post.post_content %><p>
+
+  <p class="details">created on <%= @post.created_at.to_formatted_s(:long_ordinal) %> | in: <%= @post.category %></p>
+
+
+
+<p>
+  <%= link_to "back home", posts_path %> |
+  <%= link_to "edit this", edit_post_path(params[:id]) %>
+</p>
+
+<h3 class="title"> comments </h3>
+
+  <% @post.comments.each do |comment| %>
+    <p><%= comment.comment_text %> by <%= comment.user %> at <%= comment.created_at %>
+     | <%= link_to 'delete this', comment, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  <% end %>
+
+</article>
+
+<div class="container">
+<h3 class="title"> add a comment </h3>
+
+<%= form_for @comment do |f| %>
+  <p>
+  <%= f.label "Enter your comment" %>
+  <%= f.text_field :comment_text %>
+  </p>
+  <p>
+  <%= f.hidden_field :post_id %>
+  <%= f.hidden_field :user_id %>
+
+  <%= f.submit "Submit Comment" %>
+  </p>
+<% end %>
+</div>
+
